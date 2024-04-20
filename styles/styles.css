@@ -13,58 +13,37 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  font-size: 15px;
+  padding: 0 16px;
 }
 
 .qr-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  max-width: 350px;
+  max-width: 320px;
   width: 100%;
+  padding: 16px;
   background-color: hsl(0, 0%, 100%);
-  padding: 17px;
-  border-radius: 25px;
+  border-radius: 15px;
 }
 
-.image {
+.image .qr-img {
   width: 100%;
-  display: flex;
-  justify-content: center;
-}
-
-.qr-img {
-  width: 100%;
-  border-radius: 13px;
 }
 
 .text-data {
+  margin: 24px 0;
+  padding: 0 16px;
+  height: 129px;
+}
+
+.title {
+  font-size: 22px;
   text-align: center;
-  width: 100%;
-  margin: 20px 0;
-  padding: 0 6px;
-}
-
-.text-data .title {
-  font-size: 26px;
-  margin-bottom: 15px;
-  color: hsl(218, 44%, 22%);
   font-weight: 700;
+  color: hsl(218, 44%, 22%);
 }
 
-.text-data .paragraph {
-  font-size: 15px;
+.paragraph {
+  text-align: center;
+  padding: 16px 0;
   color: hsl(220, 15%, 55%);
-  font-weight: 400;
-}
-
-@media (max-width: 360px) {
-  .qr-container {
-    max-width: 320px;
-  }
-}
-
-@media (max-width: 345px) {
-  .qr-container {
-    max-width: 300px;
-  }
 }
